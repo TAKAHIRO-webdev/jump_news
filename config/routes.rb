@@ -1,7 +1,4 @@
 Rails.application.routes.draw do
-  get 'comments/index'
-
-  get 'comments/edit'
 
   root 'links#index'
 

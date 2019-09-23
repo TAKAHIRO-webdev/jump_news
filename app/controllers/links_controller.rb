@@ -21,6 +21,7 @@ before_action :prevent_unauthorized_user_access, only: [:new, :edit]
 
   def show
     @link = Link.find_by(id: params[:id])
+    @comments = @link.comments
   end
 
   def edit

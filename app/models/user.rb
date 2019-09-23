@@ -14,4 +14,9 @@ class User < ApplicationRecord
     self == link.user
   end
 
+  def owns_comment?(comment)
+    self == comment.user
+  end
+
+
 end
